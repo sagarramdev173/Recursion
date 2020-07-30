@@ -4,6 +4,7 @@
         "iostream": "cpp",
         "limits": "cpp",
         "utility": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "stack": "cpp"
     }
 }
