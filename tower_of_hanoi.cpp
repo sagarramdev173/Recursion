@@ -3,14 +3,14 @@
 using namespace std;
 void solve(int source,int destination,int helper,int no_of_plates)
 {
-    if(no_of_plates==1)
+    if(no_of_plates==1) //base condition
     {
         cout<<"noving plate "<<no_of_plates<<" from "<<source<<" to "<<destination<<endl;
         return;
     }
-    solve(source,helper,destination,no_of_plates-1);
-    cout<<"noving plate "<<no_of_plates<<"from "<<source<<" to "<<destination<<endl;
-    solve(helper,destination,source,no_of_plates);
+    solve(source,helper,destination,no_of_plates-1);  // hypthesis
+    cout<<"noving plate "<<no_of_plates<<"from "<<source<<" to "<<destination<<endl; //induction
+    solve(helper,destination,source,no_of_plates); // induction
     return;
 
 }
