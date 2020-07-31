@@ -5,6 +5,7 @@
         "limits": "cpp",
         "utility": "cpp",
         "vector": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "xtree": "cpp"
     }
 }
